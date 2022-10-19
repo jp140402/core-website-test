@@ -121,15 +121,41 @@ function checkboxClicked(event){
     }
 }
 
-// $(window).on('load', function(){
-// if($(window).width()<1000){
-//   $('.masonry').addClass('collapse-open')
-// }})
 
-function expandProducts(){
-  $('.masonry').toggleClass('collapse-open')
-  // $('.masonry').toggleClass('collapse-closed')
+
+function expandProducts(e){
+  e.preventDefault();
+  var element = document.querySelector('.masonry')
+  var curHeight = getComputedStyle(element).height
+  
+  if (curHeight==='2350px'){
+    $('.masonry').css({
+      height: "7600px",
+      marginBottom: "0px"
+    });
+    $('.expand-icon h6')[0].innerText = 'View Less'
+    $('.bxs-chevrons-down').css({
+      transform: 'rotate(-180deg)',
+      animation : 'none'
+    });
+  }
+  else{
+    $('.masonry').css({
+      height: "2350px",
+      marginBottom: "-350px"
+    });
+      window.scrollTo({
+        top: document.querySelector('#products').offsetTop,
+        behavior: 'smooth'
+      })
+      $('.expand-icon h6')[0].innerText = 'View More Products'
+      $('.bxs-chevrons-down').css({
+        animation : ''
+      });
+    }
+      
 }
+
 
 function Home(){
 
