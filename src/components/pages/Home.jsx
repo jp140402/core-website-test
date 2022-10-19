@@ -15,45 +15,60 @@ $(document).on('scroll',function() {
   var bottom_of_element = $('#contact').offset().top + $('#contact').outerHeight();
   var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
   var top_of_screen = $(window).scrollTop();
-
+  function fadeIn(){
+     
+    $('.float').fadeIn('slow', function(){
+    $('.float').removeClass("fixed");
+    })
+    $('.whatsapp-api').addClass("closed");
+    $('.whatsapp-api').removeClass("open");
+  }
+  function fadeOut(){
+     
+    $('.float').fadeOut('slow', function(){
+    $('.float').addClass("fixed");
+    })
+    $('.whatsapp-api').addClass("open");
+    $('.whatsapp-api').removeClass("closed");
+  }
 
   ///////////IF DESKTOP//////////////
   if($(window).width()>1000){
     if ((bottom_of_screen > (top_of_element + 500)) && (top_of_screen < bottom_of_element)){
-      $('.float').fadeOut('slow', function(){
-        $('.float').addClass("fixed");
-      })
-      $('.whatsapp-api').addClass("open");
-      $('.whatsapp-api').removeClass("closed");
+      fadeOut()
     }
     else{
-      $('.float').fadeIn('slow', function(){
-        $('.float').removeClass("fixed");
-      })
-      $('.whatsapp-api').addClass("closed");
-      $('.whatsapp-api').removeClass("open");
+      fadeIn()  
     }
   }
   ///////////IF MOBILE//////////////
+  // else{
+  //   if ((bottom_of_screen > (top_of_element + 1500)) && (top_of_screen < bottom_of_element)){
+  //     $('.whatsapp').fadeOut('2000', function(){
+  //       $('.whatsapp').css("opacity", "0");
+  //       $('.whatsapp').css("pointer-events", "none");
+  //     })
+  //     $('.whatsapp-api').fadeIn('2000', function(){
+  //       $('.whatsapp-api').css("opacity", "1");
+  //     })
+  //   }
+  //   else{
+  //     $('.whatsapp').fadeIn('2000', function(){
+  //       $('.whatsapp').css("opacity", "1");
+  //       $('.whatsapp').css("pointer-events", "all");
+  //     })
+  //     $('.whatsapp-api').fadeOut('2000', function(){
+        
+  //       $('.whatsapp-api').css("opacity", "0");
+  //     })
+  //   }
+  // }
   else{
     if ((bottom_of_screen > (top_of_element + 1500)) && (top_of_screen < bottom_of_element)){
-      $('.whatsapp').fadeOut('2000', function(){
-        $('.whatsapp').css("opacity", "0");
-        $('.whatsapp').css("pointer-events", "none");
-      })
-      $('.whatsapp-api').fadeIn('2000', function(){
-        $('.whatsapp-api').css("opacity", "1");
-      })
+      fadeOut()
     }
     else{
-      $('.whatsapp').fadeIn('2000', function(){
-        $('.whatsapp').css("opacity", "1");
-        $('.whatsapp').css("pointer-events", "all");
-      })
-      $('.whatsapp-api').fadeOut('2000', function(){
-        
-        $('.whatsapp-api').css("opacity", "0");
-      })
+      fadeIn()  
     }
   }
 })
