@@ -6,7 +6,12 @@ import ServicesCard from "./ServicesCard";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import $ from 'jquery';
+
 AOS.init({once: true});
+
+function onSubmit(){
+  
+}
 
 
 $(document).on('scroll',function() {
@@ -299,8 +304,54 @@ return <div>
     />
     </div>
     </section>
+    <section id="gallery" className="section-features gallery">
+    <div className="container" data-aos="fade-up">
+        <div className="section-title">
+          <span>Gallery</span>
+          <p>Services we offer</p>
+        </div>
 
-    <section id="about" className="section-features about">
+  <div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="..."/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100" alt="..."/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100" alt="..."/>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+</div>
+      </div>
+    </section>
+    <section id="about" className="section-features about dark">
     <div className="container" data-aos="fade-up">
         <div className="section-title">
           <span>About Us</span>
@@ -362,7 +413,7 @@ return <div>
       </div>
       </section>
 
-    <section id="contact" className="section-features contact dark">
+    <section id="contact" className="section-features contact">
       <div className="container" data-aos="fade-up">
 
         <div className="section-title">
@@ -411,13 +462,13 @@ return <div>
 </div>
 </section>
 
-<section id="enquiry" className="section-features enquiry">
+<section id="enquiry" className="section-features enquiry dark">
 <div className="container-fluid" data-aos="fade-up">
         <div className="section-title">
           <span>Enquiry Form</span>
           <p>Submit an enquiry</p>
         </div>
-            <form action="forms/contact.php" method="post" role="form" className="php-email-form mx-auto needs-validation">
+            <form action="../../forms/contact.php" method="post" role="form" className="php-email-form mx-auto needs-validation">
               <div className="row">
                 <div className="col-lg-6 col-md-12 form-group">
                   <input type="text" name="name" className="form-control basic" id="name" placeholder="Your Name" required autoComplete="off"/>

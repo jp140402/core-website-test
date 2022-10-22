@@ -95,6 +95,9 @@ function Header(){
           <li id="services-link" className="nav-item" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <a className="nav-link" onClick={headerBg} href="#services" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Services</a>
           </li>
+          <li id="gallery-link" className="nav-item" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+            <a className="nav-link" onClick={headerBg} href="#gallery" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Gallery</a>
+          </li>
           <li id="about-link" className="nav-item" onClick={handleClick} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
             <a className="nav-link" onClick={headerBg} href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
           </li>

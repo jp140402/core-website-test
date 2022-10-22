@@ -510,12 +510,20 @@ column-gap: 1em;
   }
   }
 
+
+
+/* ///////////////////GALLERY///////////////// */
+
+
 /* ///////////////////ABOUT///////////////// */
 
   #about {
-    color: #000;
+    color: white;
     overflow: hidden;
     font-family: 'Sora', 'sans-serif';
+  }
+  #about .section-title span{
+    color: white;
   }
   #about img{
     border-radius: 10px;
@@ -526,7 +534,9 @@ column-gap: 1em;
     font-family: "Poppins", sans-serif;
     
   }
-  
+  #about .content p {
+    color: #b0b0b0;
+  }
   #about .content ul {
     list-style: none;
     padding: 0;
@@ -536,7 +546,7 @@ column-gap: 1em;
   #about .content ul li {
     padding: 0 0 8px 26px;
     position: relative;
-    
+    color: #b0b0b0;
   }
   
   #about .content ul i {
@@ -557,7 +567,7 @@ column-gap: 1em;
     margin-bottom: 0;
   }
   #features {
-    color: #000;
+    color: white;
     padding-top: 80px;
     overflow: hidden;
     font-family: 'Sora', 'sans-serif';
@@ -587,7 +597,7 @@ column-gap: 1em;
   
   #features .icon-box p {
     font-size: 15px;
-    color: #848484;
+    color: #b0b0b0;
     margin-left: 60px;
   }
   
@@ -608,7 +618,7 @@ column-gap: 1em;
   overflow: hidden;
 }
 #contact .section-title span{
-  color: white;
+  color: black;
 }
 iframe{
   border-radius: 10px;
@@ -725,7 +735,7 @@ iframe{
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -733,7 +743,7 @@ iframe{
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #b1b1b1;
+  color: #707070;
 }
 
 #contact .info .email,
@@ -742,8 +752,12 @@ iframe{
 }
 
 /* //////////////////////ENQUIRY FORM///////////////////////// */
+
    #enquiry {
-    margin-bottom: 100px;
+    padding-bottom: 150px;
+  }
+  #enquiry .section-title span{
+    color: white;
   }
   #enquiry .container-fluid{
     width: 85%;
@@ -917,6 +931,7 @@ iframe{
 
 
   /* ///////////////////FOOTER///////////////// */
+
 
 footer {
   font-family: 'Sora', 'sans-serif';
