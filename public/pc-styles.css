@@ -514,7 +514,16 @@ column-gap: 1em;
 
 /* ///////////////////GALLERY///////////////// */
 
-
+/* #gallery .carousel {
+  width:400px;
+  min-height:500px;
+  max-height: 500px;
+  overflow: hidden;
+  
+}
+#gallery #carouselDark .carousel-item img{
+  
+} */
 /* ///////////////////ABOUT///////////////// */
 
   #about {
@@ -774,47 +783,6 @@ iframe{
   padding-bottom: 8px;
 }
 
-#enquiry .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#enquiry .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-#enquiry .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#enquiry .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-#enquiry .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
 
 #enquiry .php-email-form .basic,
 #enquiry .php-email-form textarea {
@@ -892,7 +860,8 @@ iframe{
   display: none;
 }
 #enquiry .php-email-form button[type=submit] {
-  background: white;          
+  background: white;     
+  margin-top: 20px;     
   padding: 10px 24px;
   color: black;
   letter-spacing: 1.5px;
@@ -907,28 +876,16 @@ iframe{
   background: black;
   color: white;
 }
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+#enquiry .php-email-form .alert{
+  text-align: center;
+  padding-top: 0px;
 }
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
+#enquiry .php-email-form .alert .bx{
+  font-size: 30px;
+  padding-right: 10px;
+  position: relative;
+  top: 10px;
 }
-
-
 
   /* ///////////////////FOOTER///////////////// */
 

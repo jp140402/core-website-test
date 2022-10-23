@@ -398,13 +398,14 @@
   iframe{
     border-radius: 10px;
     width: 100%;
-  height: 450px;
+  height: 550px;
   }
   #contact .info {
     width: 80%;
-    margin: 50px 20px;
+    margin: 100px 20px;
   }
   #contact .map-and-details{
+    margin-top: 100px !important;
     margin-bottom: 50px;
   }
   #contact .info i {
@@ -462,7 +463,6 @@
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: white;
     
   }
   
@@ -470,16 +470,19 @@
     padding: 0 0 0 150px;
     margin-bottom: 0;
     font-size: 25px;
-    color: #b1b1b1;
   }
   
   #contact .info .email,
   #contact .info .phone {
     /* margin-top: 40px; */
   }
+
+
    /* //////////////////////ENQUIRY FORM///////////////////////// */
+
+  
    #enquiry {
-    margin-bottom: 100px;
+    padding-bottom: 600px;
   }
   #enquiry .container-fluid{
     width: 90%;
@@ -488,53 +491,10 @@
     width: 100%;
     /* background: transparent; */
   }
-  
  
-
   #enquiry .php-email-form .form-group {
     padding-bottom: 8px;
-  }
-  
-  #enquiry .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  #enquiry .php-email-form .error-message br+br {
-    margin-top: 25px;
-  }
-  
-  #enquiry .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  #enquiry .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  #enquiry .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
+    margin: 15px 0px;
   }
   
   #enquiry .php-email-form .basic,
@@ -545,7 +505,7 @@
     box-shadow: none;
     font-size: 35px;
     border-radius: 6px;
-    padding: 60px;
+    padding: 80px;
     padding-left: 36px;
   }
   
@@ -573,12 +533,14 @@
     margin-top: 10px;
     border: solid black;
     border-radius: 4px;
-    padding: 30px; 
-    height: auto;
+    padding: 50px;
+    padding-left: 36px;
+    padding-bottom: 50px !important;
+    margin-bottom: 20px !important;
   }
   
   .checkbox-form .checkbox-title{
-    font-size: 32px;
+    font-size: 35px;
     display: inline-block;
     color: #6c757d;
     margin-right: 50px;
@@ -586,16 +548,17 @@
   }
   .checkbox-form .form-check{
     display: block;
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color: #18151f;
-    margin: 30px;
+    margin: 40px;
     border-radius: 4px;
   }
   
   .checkbox-form .form-check .form-check-input{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 25px;
     background-color: white;
+    font-size: 30px;
   }
   .checkbox-form .form-check .form-check-input:checked{
     background: -webkit-linear-gradient(15deg, #13547a 0%, #80d0c7 100%); 
@@ -620,27 +583,19 @@
     border-image-slice: 1;
   }
   
-  
-  @-webkit-keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+  #enquiry .php-email-form .alert{
+    text-align: center;
+    padding-top: 0px;
+    font-size: 35px;
   }
-  
-  @keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+  #enquiry .php-email-form .alert .bx{
+    display: flex;
+    font-size: 100px;
+    justify-content: center;
   }
-  
+  #enquiry .php-email-form .alert .mobile-break{
+    display: block !important;
+  }
 
 
   /* ///////////////////FOOTER///////////////// */
